@@ -74,6 +74,7 @@ header {
     padding: 1.5rem 5%;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 2rem;
 }
 
 .logo {
@@ -116,42 +117,93 @@ header {
     width: 100%;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
+/* Language Selector */
+.language-selector {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
-.bar {
-    display: block;
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-btn .flag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.lang-btn .lang-code {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(112, 0, 255, 0.15));
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+.lang-btn.active .lang-code {
+    color: var(--primary-color);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger .bar {
     width: 25px;
     height: 3px;
-    margin: 5px auto;
     background-color: var(--text-color);
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-speed);
+    border-radius: 2px;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
-    background: radial-gradient(circle at top right, rgba(112, 0, 255, 0.1), transparent 40%);
-    position: relative;
+    min-height: 100vh;
+    padding: 8rem 10% 4rem;
 }
 
 .hero-content {
-    max-width: 1000px;
-    z-index: 1;
+    width: 55%;
 }
 
 .greeting {
     font-size: 1.2rem;
     color: var(--primary-color);
-    font-weight: 600;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .glitch {
@@ -548,7 +600,7 @@ footer i {
     }
 
     .hamburger {
-        display: block;
+        display: flex;
         z-index: 1001;
     }
 
@@ -571,6 +623,12 @@ footer i {
         right: 0;
     }
 
+    .language-selector {
+        position: absolute;
+        top: 1.5rem;
+        right: 5rem;
+    }
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
@@ -591,6 +649,7 @@ footer i {
     }
 
     .hero-content {
+        width: 100%;
         margin-bottom: 3rem;
     }
 
@@ -610,6 +669,7 @@ footer i {
 
     .cta-buttons {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .section {

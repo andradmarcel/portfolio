@@ -51,6 +51,57 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('hidden');
         observer.observe(section);
     });
+
+    // Language Selector Logic
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const currentLang = localStorage.getItem('language') || 'pt';
+
+    // Set initial state
+    updateLanguage(currentLang);
+    setActiveButton(currentLang);
+
+    langButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const lang = button.getAttribute('data-lang');
+            updateLanguage(lang);
+            setActiveButton(lang);
+            localStorage.setItem('language', lang);
+        });
+    });
+
+    function setActiveButton(lang) {
+        langButtons.forEach(btn => {
+            if (btn.getAttribute('data-lang') === lang) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+
+    function updateLanguage(lang) {
+        // Update text content
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let value = translations[lang];
+
+            keys.forEach(k => {
+                if (value) value = value[k];
+            });
+
+            if (value) {
+                if (element.tagName === 'P' && value.includes('<strong>')) {
+                    element.innerHTML = value;
+                } else {
+                    element.textContent = value;
+                }
+            }
+        });
+
+        // Update html lang attribute
+        document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    }
 });
 
 // Add CSS class for fade-in animation via JS to keep CSS clean

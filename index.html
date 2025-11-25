@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcel Andrade | Engenharia de Software & Back-End</title>
     <meta name="description"
-        content="Portfólio de Marcel Andrade, estudante de Engenharia de Software e desenvolvedor focado em Back-End, Automação e IA.">
+        content="Portfol do Marcel Andrade, estudante de Engenharia de Software e desenvolvedor focado em Back-End, Automação e IA.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -22,12 +22,22 @@
         <nav class="navbar">
             <div class="logo">Marcel</div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
             </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt" aria-label="Português">
+                    <span class="flag">🇵🇹</span>
+                    <span class="lang-code">PT</span>
+                </button>
+                <button class="lang-btn" data-lang="en" aria-label="English">
+                    <span class="flag">🇺🇸</span>
+                    <span class="lang-code">EN</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -39,44 +49,51 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <span class="greeting">Olá, eu sou</span>
+                <span class="greeting" data-i18n="hero.greeting">Olá, eu sou</span>
                 <h1 class="glitch" data-text="Marcel Andrade">Marcel Andrade</h1>
-                <h2 class="subtitle">Engenharia de Software | Back-End & IA</h2>
-                <p class="description">Apaixonado por criar soluções robustas de back-end, automação inteligente e
+                <h2 class="subtitle" data-i18n="hero.role">Engenharia de Software | Back-End & IA</h2>
+                <p class="description" data-i18n="hero.description">Apaixonado por criar soluções robustas de back-end,
+                    automação inteligente e
                     explorar o potencial da Inteligência Artificial.</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">Ver Projetos</a>
-                    <a href="#contact" class="btn secondary">Entrar em Contato</a>
+                    <a href="#projects" class="btn primary" data-i18n="hero.btn_projects">Ver Projetos</a>
+                    <a href="#contact" class="btn secondary" data-i18n="hero.btn_contact">Entrar em Contato</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="profile-image-container">
-                    <img src="profile.png" alt="Marcel Andrade - Software Engineer" class="profile-image">
+                    <img src="assets/profile.png" alt="Marcel Andrade - Software Engineer" class="profile-image">
                 </div>
             </div>
         </section>
 
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
+                <h2 class="section-title" data-i18n="about.title">Sobre Mim</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Sou estudante de <strong>Engenharia de Software</strong> (Estácio, 2025-2029) em transição de
+                        <p data-i18n="about.p1">Sou estudante de <strong>Engenharia de Software</strong> (Estácio,
+                            2025-2029) em transição de
                             carreira. Minha jornada é movida pela paixão por tecnologia, especificamente no
                             desenvolvimento de soluções de <strong>back-end</strong>, <strong>automação</strong> e
                             <strong>inteligência artificial</strong>.
                         </p>
-                        <p>Trago comigo uma bagagem sólida em vendas, onde desenvolvi habilidades cruciais como
+                        <p data-i18n="about.p2">Trago comigo uma bagagem sólida em vendas, onde desenvolvi habilidades
+                            cruciais como
                             comunicação estratégica, resiliência e foco em resultados. Hoje, aplico essas soft skills
                             para resolver problemas complexos através do código.</p>
 
                         <div class="soft-skills">
-                            <h3>Soft Skills</h3>
+                            <h3 data-i18n="about.soft_skills_title">Soft Skills</h3>
                             <ul>
-                                <li><i class="fas fa-check-circle"></i> Comunicação Clara</li>
-                                <li><i class="fas fa-check-circle"></i> Resiliência</li>
-                                <li><i class="fas fa-check-circle"></i> Trabalho em Equipe</li>
-                                <li><i class="fas fa-check-circle"></i> Pensamento Analítico</li>
+                                <li><i class="fas fa-check-circle"></i> <span data-i18n="about.ss1">Comunicação
+                                        Clara</span></li>
+                                <li><i class="fas fa-check-circle"></i> <span data-i18n="about.ss2">Resiliência</span>
+                                </li>
+                                <li><i class="fas fa-check-circle"></i> <span data-i18n="about.ss3">Trabalho em
+                                        Equipe</span></li>
+                                <li><i class="fas fa-check-circle"></i> <span data-i18n="about.ss4">Pensamento
+                                        Analítico</span></li>
                             </ul>
                         </div>
                     </div>
@@ -86,7 +103,7 @@
 
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title">Tecnologias & Ferramentas</h2>
+                <h2 class="section-title" data-i18n="skills.title">Tecnologias & Ferramentas</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <i class="fab fa-python"></i>
@@ -126,12 +143,13 @@
 
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">Projetos em Destaque</h2>
+                <h2 class="section-title" data-i18n="projects.title">Projetos em Destaque</h2>
                 <div class="projects-grid">
                     <article class="project-card">
                         <div class="project-content">
                             <h3>Base de Conhecimento</h3>
-                            <p>Aplicação web interativa estilo Cyberpunk para explorar tecnologias. Pesquisa em tempo
+                            <p data-i18n="projects.p1_desc">Aplicação web interativa estilo Cyberpunk para explorar
+                                tecnologias. Pesquisa em tempo
                                 real e design responsivo.</p>
                             <div class="tags">
                                 <span>HTML5</span>
@@ -139,60 +157,69 @@
                                 <span>JavaScript</span>
                             </div>
                             <a href="https://github.com/andradmarcel/Imersao-DEV-HTML-CSS" target="_blank"
-                                class="project-link">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                     <article class="project-card">
                         <div class="project-content">
                             <h3>Podcast IA</h3>
-                            <p>Projeto focado em inteligência artificial aplicada a podcasts.</p>
+                            <p data-i18n="projects.p2_desc">Projeto focado em inteligência artificial aplicada a
+                                podcasts.</p>
                             <div class="tags">
                                 <span>AI</span>
                                 <span>Python</span>
                             </div>
                             <a href="https://github.com/andradmarcel/Podcast_IA" target="_blank"
-                                class="project-link">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-content">
                             <h3>Imersão Dev IA (Alura)</h3>
-                            <p>Projetos desenvolvidos durante a imersão de Inteligência Artificial do Google com a
+                            <p data-i18n="projects.p3_desc">Projetos desenvolvidos durante a imersão de Inteligência
+                                Artificial do Google com a
                                 Alura.</p>
                             <div class="tags">
                                 <span>Python</span>
                                 <span>Google AI</span>
                             </div>
                             <a href="https://github.com/andradmarcel/imersao_dev_IA_alura" target="_blank"
-                                class="project-link">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-content">
                             <h3>Sistema Bancário (DIO)</h3>
-                            <p>Implementação de um sistema bancário simples em Python, focado em lógica de programação.
+                            <p data-i18n="projects.p4_desc">Implementação de um sistema bancário simples em Python,
+                                focado em lógica de programação.
                             </p>
                             <div class="tags">
                                 <span>Python</span>
                                 <span>Logic</span>
                             </div>
                             <a href="https://github.com/andradmarcel/projeto_sistema_bancario_DIO" target="_blank"
-                                class="project-link">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-content">
                             <h3>E-book IA</h3>
-                            <p>Material educativo ou gerado sobre Inteligência Artificial.</p>
+                            <p data-i18n="projects.p5_desc">Material educativo ou gerado sobre Inteligência Artificial.
+                            </p>
                             <div class="tags">
                                 <span>Content</span>
                                 <span>AI</span>
                             </div>
-                            <a href="https://github.com/andradmarcel/ebook_IA" target="_blank" class="project-link">Ver
-                                no GitHub <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://github.com/andradmarcel/ebook_IA" target="_blank"
+                                class="project-link"><span data-i18n="projects.view_github">Ver
+                                    no GitHub</span> <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                 </div>
@@ -201,8 +228,9 @@
 
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">Vamos Conversar?</h2>
-                <p class="contact-text">Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade
+                <h2 class="section-title" data-i18n="contact.title">Vamos Conversar?</h2>
+                <p class="contact-text" data-i18n="contact.text">Estou sempre aberto a novas oportunidades e
+                    colaborações. Sinta-se à vontade
                     para entrar em contato!</p>
                 <div class="contact-links">
                     <a href="https://github.com/andradmarcel" target="_blank" class="contact-btn">
@@ -220,9 +248,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Marcel Andrade. Desenvolvido com <i class="fas fa-heart"></i> e código.</p>
+        <p data-i18n="footer.text">&copy; 2025 Marcel Andrade. Desenvolvido com <i class="fas fa-heart"></i> e código.
+        </p>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 
