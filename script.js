@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (value) {
-                if (element.tagName === 'P' && value.includes('<strong>')) {
+                if (value.includes('<')) {
                     element.innerHTML = value;
                 } else {
                     element.textContent = value;

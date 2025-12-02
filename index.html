@@ -53,15 +53,21 @@
             <div class="hero-content">
                 <span class="greeting" data-i18n="hero.greeting">Olá, eu sou</span>
                 <h1 class="glitch" data-text="Marcel Andrade">Marcel Andrade</h1>
-                <h2 class="subtitle" data-i18n="hero.role">Engenharia de Software | Back-End & IA</h2>
-                <p class="description" data-i18n="hero.description">Apaixonado por criar soluções robustas de back-end,
-                    automação inteligente e
-                    explorar o potencial da Inteligência Artificial.</p>
+                <h2 class="subtitle" data-i18n="hero.role">Engenharia de Software | <span
+                        class="text-highlight">Automação</span> com <span class="text-highlight">IA</span> & Soluções de
+                    <span class="text-highlight">Negócio</span>
+                </h2>
+                <p class="description" data-i18n="hero.description">Engenheiro de Software com DNA Executivo. Unindo
+                    visão estratégica de <span class="text-highlight">negócios</span> ao desenvolvimento técnico.
+                    Especialista em criar agentes autônomos, <span class="text-highlight">automação</span> de processos
+                    e back-end robusto, transformando problemas complexos em código eficiente.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary" data-i18n="hero.btn_projects">Ver Projetos</a>
-                    <a href="#contact" class="btn secondary" data-i18n="hero.btn_contact">Entrar em Contato</a>
+                    <a href="#contact" class="btn secondary" data-i18n="hero.btn_contact">Vamos construir uma
+                        solução?</a>
                 </div>
             </div>
+
             <div class="hero-visual">
                 <div class="profile-image-container">
                     <img src="assets/profile.png" alt="Marcel Andrade - Software Engineer" class="profile-image">
@@ -85,6 +91,16 @@
                             comunicação estratégica, resiliência e foco em resultados. Hoje, aplico essas soft skills
                             para resolver problemas complexos através do código.</p>
 
+                        <div class="professional-differential">
+                            <h3 data-i18n="about.differential_title">Diferencial Profissional</h3>
+                            <p data-i18n="about.differential_text">Minha transição para a Engenharia de Software é
+                                alicerçada por uma carreira sólida em gestão executiva. Como Diretor de Franquia,
+                                desenvolvi uma capacidade apurada de Análise de Requisitos e Gestão de
+                                Stakeholders.<br><br>Não apenas escrevo código; eu entendo a dor do negócio. Tenho
+                                experiência comprovada em traduzir necessidades complexas de clientes B2B em soluções
+                                técnicas, garantindo que o software entregue resolva o problema real.</p>
+                        </div>
+
                         <div class="soft-skills">
                             <h3 data-i18n="about.soft_skills_title">Soft Skills</h3>
                             <ul>
@@ -106,38 +122,103 @@
         <section id="skills" class="section">
             <div class="container">
                 <h2 class="section-title" data-i18n="skills.title">Tecnologias & Ferramentas</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fab fa-python"></i>
-                        <h3>Python</h3>
+                <div class="skills-container">
+                    <!-- Linguagens & Backend -->
+                    <div class="skills-category">
+                        <h3 data-i18n="skills.backend_title">Linguagens & Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge">
+                                <i class="fab fa-python"></i>
+                                <span>Python (Automação)</span>
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-code"></i>
+                                <span>Lógica de Programação</span>
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-server"></i>
+                                <span>APIs REST</span>
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database"></i>
-                        <h3>SQL</h3>
+
+                    <!-- IA & Dados -->
+                    <div class="skills-category">
+                        <h3 data-i18n="skills.ai_title">IA & Dados</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>LangChain & LangGraph</span>
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-brain"></i>
+                                <span>RAG</span>
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-table"></i>
+                                <span>Pandas</span>
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-vector-square"></i>
+                                <span>FAISS</span>
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-robot"></i>
+                                <span>Engenharia de Prompts</span>
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-js"></i>
-                        <h3>JavaScript</h3>
+
+                    <!-- Ferramentas -->
+                    <div class="skills-category">
+                        <h3 data-i18n="skills.tools_title">Ferramentas</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-terminal"></i>
+                                <span>VS Code</span>
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fab fa-google"></i>
+                                <span>Google Colab</span>
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h3>C / C#</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-java"></i>
-                        <h3>Java</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-server"></i>
-                        <h3>Flask / Django</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-git-alt"></i>
-                        <h3>Git & GitHub</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-terminal"></i>
-                        <h3>VS Code</h3>
+
+                    <!-- Idiomas -->
+                    <div class="skills-category">
+                        <h3 data-i18n="skills.languages_title">Idiomas</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge">
+                                <i class="fas fa-language"></i>
+                                <span>Português Fluente</span>
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-globe-americas"></i>
+                                <span>Inglês Intermediário</span>
+                                <div class="skill-level" style="width: 60%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,81 +228,39 @@
             <div class="container">
                 <h2 class="section-title" data-i18n="projects.title">Projetos em Destaque</h2>
                 <div class="projects-grid">
+                    <article class="project-card highlight-card">
+                        <div class="project-content">
+                            <h3 data-i18n="projects.hr_agent_title"><i class="fas fa-robot"></i> Corporate HR AI Agent
+                            </h3>
+                            <p data-i18n="projects.hr_agent_desc">Agente autônomo corporativo. Utiliza arquitetura RAG e
+                                orquestração via LangGraph para automatizar respostas de RH baseadas em políticas
+                                internas (PDFs), reduzindo drasticamente o tempo de suporte.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">LangGraph</span>
+                                <span class="tag">RAG</span>
+                                <span class="tag">FAISS</span>
+                            </div>
+                            <a href="#" target="_blank" class="project-link"><span
+                                    data-i18n="projects.view_solution">Ver Solução</span> <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                     <article class="project-card">
                         <div class="project-content">
-                            <h3>Base de Conhecimento</h3>
-                            <p data-i18n="projects.p1_desc">Aplicação web interativa estilo Cyberpunk para explorar
-                                tecnologias. Pesquisa em tempo
-                                real e design responsivo.</p>
+                            <h3 data-i18n="projects.techvault_title"><i class="fas fa-database"></i> TechVault Search
+                                Engine</h3>
+                            <p data-i18n="projects.techvault_desc">Motor de busca otimizado no client-side. Foco em
+                                performance de renderização e manipulação de dados em tempo real, garantindo uma
+                                experiência de busca instantânea sem recarregamento.</p>
                             <div class="tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
+                                <span class="tag">JavaScript ES6+</span>
+                                <span class="tag">DOM Manipulation</span>
+                                <span class="tag">JSON</span>
                             </div>
                             <a href="https://github.com/andradmarcel/Imersao-DEV-HTML-CSS" target="_blank"
-                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
+                                class="project-link"><span data-i18n="projects.view_code">Ver Código</span> <i
                                     class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Podcast IA</h3>
-                            <p data-i18n="projects.p2_desc">Projeto focado em inteligência artificial aplicada a
-                                podcasts.</p>
-                            <div class="tags">
-                                <span>AI</span>
-                                <span>Python</span>
-                            </div>
-                            <a href="https://github.com/andradmarcel/Podcast_IA" target="_blank"
-                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Imersão Dev IA (Alura)</h3>
-                            <p data-i18n="projects.p3_desc">Projetos desenvolvidos durante a imersão de Inteligência
-                                Artificial do Google com a
-                                Alura.</p>
-                            <div class="tags">
-                                <span>Python</span>
-                                <span>Google AI</span>
-                            </div>
-                            <a href="https://github.com/andradmarcel/imersao_dev_IA_alura" target="_blank"
-                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Sistema Bancário (DIO)</h3>
-                            <p data-i18n="projects.p4_desc">Implementação de um sistema bancário simples em Python,
-                                focado em lógica de programação.
-                            </p>
-                            <div class="tags">
-                                <span>Python</span>
-                                <span>Logic</span>
-                            </div>
-                            <a href="https://github.com/andradmarcel/projeto_sistema_bancario_DIO" target="_blank"
-                                class="project-link"><span data-i18n="projects.view_github">Ver no GitHub</span> <i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>E-book IA</h3>
-                            <p data-i18n="projects.p5_desc">Material educativo ou gerado sobre Inteligência Artificial.
-                            </p>
-                            <div class="tags">
-                                <span>Content</span>
-                                <span>AI</span>
-                            </div>
-                            <a href="https://github.com/andradmarcel/ebook_IA" target="_blank"
-                                class="project-link"><span data-i18n="projects.view_github">Ver
-                                    no GitHub</span> <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                 </div>

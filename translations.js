@@ -9,10 +9,10 @@ const translations = {
         },
         hero: {
             greeting: "Olá, eu sou",
-            role: "Engenharia de Software | Back-End & IA",
-            description: "Apaixonado por criar soluções robustas de back-end, automação inteligente e explorar o potencial da Inteligência Artificial.",
+            role: "Engenharia de Software | <span class='text-highlight'>Automação</span> com <span class='text-highlight'>IA</span> & Soluções de <span class='text-highlight'>Negócio</span>",
+            description: "Engenheiro de Software com DNA Executivo. Unindo visão estratégica de <span class='text-highlight'>negócios</span> ao desenvolvimento técnico. Especialista em criar agentes autônomos, <span class='text-highlight'>automação</span> de processos e back-end robusto, transformando problemas complexos em código eficiente.",
             btn_projects: "Ver Projetos",
-            btn_contact: "Entrar em Contato"
+            btn_contact: "Vamos construir uma solução?"
         },
         about: {
             title: "Sobre Mim",
@@ -22,19 +22,39 @@ const translations = {
             ss1: "Comunicação Clara",
             ss2: "Resiliência",
             ss3: "Trabalho em Equipe",
-            ss4: "Pensamento Analítico"
+            ss4: "Pensamento Analítico",
+            differential_title: "Diferencial Profissional",
+            differential_text: "Minha transição para a Engenharia de Software é alicerçada por uma carreira sólida em gestão executiva. Como Diretor de Franquia, desenvolvi uma capacidade apurada de Análise de Requisitos e Gestão de Stakeholders.<br><br>Não apenas escrevo código; eu entendo a dor do negócio. Tenho experiência comprovada em traduzir necessidades complexas de clientes B2B em soluções técnicas, garantindo que o software entregue resolva o problema real."
         },
         skills: {
-            title: "Tecnologias & Ferramentas"
+            title: "Tecnologias & Ferramentas",
+            backend_title: "Linguagens & Backend",
+            ai_title: "IA & Dados",
+            tools_title: "Ferramentas",
+            languages_title: "Idiomas",
+            python: "Python (Automação)",
+            logic: "Lógica de Programação",
+            apis: "APIs REST",
+            langchain: "LangChain & LangGraph",
+            rag: "RAG",
+            pandas: "Pandas",
+            faiss: "FAISS",
+            prompt_eng: "Engenharia de Prompts",
+            git: "Git",
+            github: "GitHub",
+            vscode: "VS Code",
+            colab: "Google Colab",
+            pt_fluency: "Português Fluente",
+            en_fluency: "Inglês Intermediário"
         },
         projects: {
             title: "Projetos em Destaque",
-            p1_desc: "Aplicação web interativa estilo Cyberpunk para explorar tecnologias. Pesquisa em tempo real e design responsivo.",
-            p2_desc: "Projeto focado em inteligência artificial aplicada a podcasts.",
-            p3_desc: "Projetos desenvolvidos durante a imersão de Inteligência Artificial do Google com a Alura.",
-            p4_desc: "Implementação de um sistema bancário simples em Python, focado em lógica de programação.",
-            p5_desc: "Material educativo ou gerado sobre Inteligência Artificial.",
-            view_github: "Ver no GitHub"
+            hr_agent_title: "Agente de Atendimento de RH",
+            hr_agent_desc: "Agente autônomo corporativo. Utiliza arquitetura RAG e orquestração via LangGraph para automatizar respostas de RH baseadas em políticas internas (PDFs), reduzindo drasticamente o tempo de suporte.",
+            techvault_title: "TechVault Search Engine",
+            techvault_desc: "Motor de busca otimizado no client-side. Foco em performance de renderização e manipulação de dados em tempo real, garantindo uma experiência de busca instantânea sem recarregamento.",
+            view_solution: "Ver Solução",
+            view_code: "Ver Código"
         },
         contact: {
             title: "Vamos Conversar?",
@@ -54,32 +74,52 @@ const translations = {
         },
         hero: {
             greeting: "Hello, I am",
-            role: "Software Engineering | Back-End & AI",
-            description: "Passionate about building robust back-end solutions, intelligent automation, and exploring the potential of Artificial Intelligence.",
+            role: "Software Engineering | <span class='text-highlight'>Automation</span> with <span class='text-highlight'>AI</span> & <span class='text-highlight'>Business</span> Solutions",
+            description: "Software Engineer with Executive DNA. Bridging the gap between strategic <span class='text-highlight'>business</span> vision and technical development. Specialist in building autonomous agents, process <span class='text-highlight'>automation</span>, and robust back-end systems, transforming complex problems into efficient code.",
             btn_projects: "View Projects",
-            btn_contact: "Get in Touch"
+            btn_contact: "Let's build a solution?"
         },
         about: {
             title: "About Me",
             p1: "I am a <strong>Software Engineering</strong> student (Estácio, 2025-2029) transitioning careers. My journey is driven by a passion for technology, specifically in developing <strong>back-end</strong> solutions, <strong>automation</strong>, and <strong>artificial intelligence</strong>.",
-            p2: "I bring with me a solid background in sales, where I developed crucial skills such as strategic communication, resilience, and results focus. Today, I apply these soft skills to solve complex problems through code.",
+            p2: "I bring with me a solid background in sales, where I developed crucial skills such as strategic communication, resilience, and a focus on results. Today, I apply these soft skills to solve complex problems through code.",
             soft_skills_title: "Soft Skills",
             ss1: "Clear Communication",
             ss2: "Resilience",
             ss3: "Teamwork",
-            ss4: "Analytical Thinking"
+            ss4: "Analytical Thinking",
+            differential_title: "Professional Differential",
+            differential_text: "My transition to Software Engineering is anchored in a solid career in executive management. As a Franchise Director, I developed a sharp ability for Requirements Analysis and Stakeholder Management.<br><br>I don't just write code; I understand the business pain. I have proven experience in translating complex B2B client needs into technical solutions, ensuring the delivered software solves the real problem."
         },
         skills: {
-            title: "Technologies & Tools"
+            title: "Technologies & Tools",
+            backend_title: "Languages & Backend",
+            ai_title: "AI & Data",
+            tools_title: "Tools",
+            languages_title: "Languages",
+            python: "Python (Automation)",
+            logic: "Logic & Algorithms",
+            apis: "REST APIs",
+            langchain: "LangChain & LangGraph",
+            rag: "RAG",
+            pandas: "Pandas",
+            faiss: "FAISS",
+            prompt_eng: "Prompt Engineering",
+            git: "Git",
+            github: "GitHub",
+            vscode: "VS Code",
+            colab: "Google Colab",
+            pt_fluency: "Fluent Portuguese",
+            en_fluency: "Intermediate English"
         },
         projects: {
             title: "Featured Projects",
-            p1_desc: "Interactive Cyberpunk-style web application to explore technologies. Real-time search and responsive design.",
-            p2_desc: "Project focused on artificial intelligence applied to podcasts.",
-            p3_desc: "Projects developed during the Google AI Immersion with Alura.",
-            p4_desc: "Implementation of a simple banking system in Python, focused on programming logic.",
-            p5_desc: "Educational material or generated content about Artificial Intelligence.",
-            view_github: "View on GitHub"
+            hr_agent_title: "Corporate HR AI Agent",
+            hr_agent_desc: "Corporate autonomous agent. Uses RAG architecture and LangGraph orchestration to automate HR responses based on internal policies (PDFs), drastically reducing support time.",
+            techvault_title: "TechVault Search Engine",
+            techvault_desc: "Client-side optimized search engine. Focused on rendering performance and real-time data manipulation, ensuring an instant search experience without reloading.",
+            view_solution: "View Solution",
+            view_code: "View Code"
         },
         contact: {
             title: "Let's Talk?",
