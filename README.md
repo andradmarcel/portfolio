@@ -2,6 +2,10 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minha jornada como estudante de Engenharia de Software, meus projetos e minhas habilidades em desenvolvimento Back-End, Automação e Inteligência Artificial.
 
+## 🔗 Portfólio
+
+- [Acesse meu portfólio](https://andradmarcel.github.io/portfolio/)
+
 ## 🚀 Sobre o Projeto
 
 Este é um site estático, responsivo e moderno, projetado para ser uma vitrine profissional. Ele inclui seções sobre minha trajetória, skills técnicas, projetos em destaque e canais de contato.
