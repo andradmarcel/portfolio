@@ -5,14 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-links li');
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        const isExpanded = navLinks.classList.toggle('active');
         hamburger.classList.toggle('active');
+        // Atualizar aria-expanded para acessibilidade
+        hamburger.setAttribute('aria-expanded', isExpanded);
+        hamburger.setAttribute('aria-label', isExpanded ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
     });
 
     links.forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
         });
     });
 
@@ -71,10 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setActiveButton(lang) {
         langButtons.forEach(btn => {
-            if (btn.getAttribute('data-lang') === lang) {
+            const isActive = btn.getAttribute('data-lang') === lang;
+            if (isActive) {
                 btn.classList.add('active');
+                btn.setAttribute('aria-pressed', 'true');
             } else {
                 btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
             }
         });
     }

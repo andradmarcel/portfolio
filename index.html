@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcel Andrade | Engenharia de Software & Back-End</title>
     <meta name="description"
-        content="Portfol do Marcel Andrade, estudante de Engenharia de Software e desenvolvedor focado em Back-End, Automação e IA.">
+        content="Portfólio do Marcel Andrade, estudante de Engenharia de Software e desenvolvedor focado em Back-End, Automação e IA.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <a href="#home" class="skip-link">Pular para o conteúdo principal</a>
     <div class="cursor-glow"></div>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegação principal">
             <div class="logo">Marcel</div>
             <ul class="nav-links">
                 <li><a href="#home" data-i18n="nav.home">Início</a></li>
@@ -28,23 +29,24 @@
                 <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
             </ul>
-            <div class="language-selector">
-                <button class="lang-btn active" data-lang="pt" aria-label="Português">
-                    <span class="flag"><img src="assets/bandeira-do-brasil.png" alt="Brasil"
+            <div class="language-selector" role="group" aria-label="Seletor de idioma">
+                <button class="lang-btn active" data-lang="pt" aria-label="Mudar para Português" aria-pressed="true">
+                    <span class="flag"><img src="assets/bandeira-do-brasil.png" alt="Bandeira do Brasil"
                             style="width: 20px;"></span>
                     <span class="lang-code">PT</span>
                 </button>
-                <button class="lang-btn" data-lang="en" aria-label="English">
-                    <span class="flag"><img src="assets/estados-unidos-da-america.png" alt="Estados Unidos"
+                <button class="lang-btn" data-lang="en" aria-label="Switch to English" aria-pressed="false">
+                    <span class="flag"><img src="assets/estados-unidos-da-america.png" alt="USA Flag"
                             style="width: 20px;"></span>
                     <span class="lang-code">EN</span>
                 </button>
             </div>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="nav-links">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </nav>
     </header>
 
@@ -70,7 +72,9 @@
 
             <div class="hero-visual">
                 <div class="profile-image-container">
-                    <img src="assets/profile.png" alt="Marcel Andrade - Software Engineer" class="profile-image">
+                    <img src="assets/profile.png"
+                        alt="Foto de Marcel Andrade, desenvolvedor de software especializado em automação e IA"
+                        class="profile-image">
                 </div>
             </div>
         </section>
@@ -241,8 +245,8 @@
                                 <span class="tag">RAG</span>
                                 <span class="tag">FAISS</span>
                             </div>
-                            <a href="#" target="_blank" class="project-link"><span
-                                    data-i18n="projects.view_solution">Ver Solução</span> <i
+                            <a href="https://github.com/andradmarcel/imersao_dev_IA_alura" target="_blank"
+                                class="project-link"><span data-i18n="projects.view_solution">Ver Solução</span> <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>

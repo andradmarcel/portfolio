@@ -825,3 +825,78 @@ footer i {
         text-align: center;
     }
 }
+/* ==================== */
+/* ACCESSIBILITY STYLES */
+/* ==================== */
+
+/* Skip Link - permite pular navegação */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--primary-color);
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    z-index: 10000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* Focus States Visíveis */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.nav-links a:focus-visible {
+    outline-offset: 5px;
+}
+
+.btn:focus-visible {
+    outline-offset: 4px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Hamburger como button */
+.hamburger {
+    background: transparent;
+    border: none;
+}
+
+/* Melhoria de Contrastes */
+.description,
+.project-content p,
+.contact-text {
+    color: #b8b8b8;
+}
+
+footer {
+    color: #888;
+}
+
+/* Respeitar preferências de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .cursor-glow {
+        display: none;
+    }
+    
+    .glitch::before,
+    .glitch::after {
+        display: none;
+    }
+}
